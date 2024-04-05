@@ -14,7 +14,7 @@ public class StudentSurveyController {
     @Autowired
     private StudentSurveyService studentSurveyService;
 
-    @GetMapping
+    @GetMapping(path = "/getStudentSurveys")
     public List<StudentSurveyModel> getStudentSurveys() {
         return studentSurveyService.getStudentSurveys();
     }

@@ -3,7 +3,6 @@ package com.sriharish.swe645assignment3.model;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Data
@@ -24,7 +23,7 @@ public class StudentSurveyModel {
 
     private String state;
 
-    private int zipCode;
+    private String zipCode;
 
     private String phoneNumber;
 
