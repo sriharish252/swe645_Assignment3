@@ -1,3 +1,4 @@
+// Author: Sri Harish Jayaram
 package com.sriharish.swe645assignment3.model;
 
 import jakarta.persistence.*;
