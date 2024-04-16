@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-studentsurvey
+  namespace: default
+spec:
+  defaultBackend:
+    service:
+      name: assignment3
+      port:
+        number: 8080
+  rules:
+    - host: api.sriharish.online
+      http:
+        paths:
+          - backend:
+              service:
+                name: assignment3
+                port:
+                  number: 8080
+            path: /survey
+            pathType: Prefix
+status:
+  loadBalancer:
+    ingress:
+      - ip: 172.31.63.168
